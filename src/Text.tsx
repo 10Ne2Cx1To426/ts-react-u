@@ -1,11 +1,11 @@
-import { FC } from "react";
+import { VFC } from "react";
 
 type Props = {
   color: string;
   fontSize: string;
 };
 
-export const Text: FC<Props> = (props) => {
-  const { color, fontSize, children } = props;
+export const Text: VFC<Props> = (props) => {
+  const { color, fontSize } = props;
   return <p style={{ color, fontSize }}>テキストです</p>;
 };
